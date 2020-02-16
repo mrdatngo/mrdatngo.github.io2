@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        code {
+            font-weight: bold;
+        }
+        #first-level > li {
+            color: blue;
+        }
+        #first-level > li > ul > li {
+            color: black;
+        }
+        #first-level h1, h2, h6 {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h3>Định nghĩa: HTML: Hypertext Markup Language - Ngôn ngữ đánh dấu siêu văn bản</h3>
+    <p>Các thẻ cơ bản:</p>
+    <ul id="first-level">
+        <li>
+            Thẻ p (paragraph): <br> <ul> <li> <code> &lt;p&gt; content &lt;/p&gt; </code> </li> </ul>
+        </li>
+        <li>
+            Thẻ h (heading): 
+            <ul>
+                <li>  &lt;h1&gt;  <h1> H1 is the biggest of heading tags</h1> &lt;/h1&gt; </li>
+                <li>  &lt;h2&gt; <h2> H2 is only smaller than h1 on heading tags </h2> &lt;/h2&gt;  </li>
+                <li>  <code> ... </code> </li>
+                <li>   &lt;h6&gt; <h6> H6 is the smallest of heading tags &lt;/h2&gt; </h6> </li>
+            </ul>
+        </li>
+        <li>
+            Mặc định: tất cả <code>space</code> hoặc <code>xuống dòng</code> sẽ bị mất đi khi hiển thị trên trình duyệt
+            <ul>
+                <li>Dùng <code>&nbsp;</code> để định nghĩa một dấu cách</li>
+                <li>Dùng  <code> &lt;br&gt; </code> (break line) để định nghĩa một dấu xuống dòng </li>
+                <li>Dùng  <code> &lt;hr&gt; </code> (horizontal rule) để định nghĩa một dòng kẻ ngang </li>
+            </ul>
+        </li>
+        <li>
+            Định dạng:
+            <ul>
+                <li> &lt;b&gt;  <b> Thẻ b (bold) make this text bold </b> &lt;/b&gt; </li>
+                <li> &lt;strong&gt;  <strong> Thẻ strong make this text bold (mang cả về mặt nghĩa nhấn mạnh) </strong> &lt;/strong&gt; </li>
+                <li> &lt;i&gt;  <i> Thẻ i (italic) make this text italic </i> &lt;/i&gt; </li>
+                <li> &lt;em&gt;  <em> Thẻ em (emphasize - nhấn mạnh) make this text italic (mang cả về mặt nghĩa nhấn mạnh) </em> &lt;/strong&gt; </li>
+                <li> &lt;small&gt;  <small> Thẻ small make this text small </small> &lt;/small&gt; </li>
+                <li> &lt;mark&gt;  <mark> Thẻ small make this text is marked </mark> &lt;/mark&gt; </li>
+                <li> &lt;del&gt;  <del> Thẻ small make this text is deleted </del> &lt;/del&gt; </li>
+                <li> &lt;ins&gt;  <ins> Thẻ ins (inserted) make this text is inserted </ins> &lt;/ins&gt; </li>
+                <li> &lt;sub&gt;  <sub> Thẻ sub (subscript) make this text like subscript </sub> &lt;/sub&gt; </li>
+                <li> &lt;sup&gt;  <sup> Thẻ sup (superscript) make this text like superscript </sup> &lt;/sup&gt; </li>
+            </ul>
+        </li>
+        
+        <li>
+            Comments: Là một công cụ dùng cho con người dễ dàng đọc hiểu và maintain code
+            <ul>
+                <li>
+                    &lt;!-- Đoạn văn bản này sẽ được browser bỏ qua  --&gt; </li>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Links:
+            <ul>
+                <li>Local: <a href="../index.html">Click me</a> /local/...</li>
+                <li>External: http://...</li>
+                <li>Target</li>
+                <li>Button as Link <button onclick="document.location = '../index.html' "> Click me </button> </li>
+                <li>Image as Link</li>
+                <li>Link Color: a:link, a:visited, a:hover, a:active</li>
+                <li>Link bookmarks: a href="#id or file#id"</li>
+            </ul>
+        </li>
+        <li>Images:
+            <ul>
+                <li>Map: img usermap="#workmap" with map name="workmap" have inside are </li>
+                <li>Background Image:</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
